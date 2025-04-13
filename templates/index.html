@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English ↔ Telugu Translator</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 English ↔ Telugu Translator</h1>
+
+        <div class="select-group">
+            <select id="srcLang">
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+            </select>
+
+            <button id="swapBtn">⇄</button>
+
+            <select id="tgtLang">
+                <option value="Telugu">Telugu</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        
+        <button id="translateBtn" onclick="translateText()">Translate</button>
+
+        <p id="status"></p>
+
+        <textarea id="outputText" readonly placeholder="Translation will appear here..."></textarea>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
